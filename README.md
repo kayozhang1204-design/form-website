@@ -2,7 +2,7 @@
 
 A single-page static site for FORM, campaign planning and measurement software. There is no build step and no dependencies.
 
-Live site: https://kayozhang1204-design.github.io/the-creation-machine/
+Live site: https://kayozhang1204-design.github.io/form-website/
 
 Every push to `main` redeploys the site through GitHub Pages within a minute or two.
 
