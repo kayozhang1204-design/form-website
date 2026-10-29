@@ -25,7 +25,7 @@ The demo button uses the placeholder address `hello@form.example`. Search `index
 
 ## Sample scenario video
 
-The Example section has its own video player. In `index.html`, find `EXAMPLE_VIDEO` and set `src` to a YouTube or Vimeo link, or to an MP4 path such as `videos/sample-scenario.mp4`. Add a `duration` such as `2:30` to show it on the play button. Until `src` is set, the section shows a photo instead.
+The Example section has its own video player. In `index.html`, find `EXAMPLE_VIDEO` and set `src` to a YouTube or Vimeo link, or to an MP4 path such as `videos/sample-scenario.mp4`. Add a `duration` such as `2:30` to show it on the play button. Until `src` is set, the photo shows a play button, and clicking it displays "The scenario video is coming soon."
 
 ## Adding videos
 
