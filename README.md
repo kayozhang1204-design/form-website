@@ -14,7 +14,7 @@ The page tells one story, and each section ends with a link to the next:
 2. **The problem:** three costs of running campaigns across separate tools.
 3. **How it works:** the four-step workflow (plan, create, launch, measure) and the screens a campaign reaches.
 4. **Results:** the three outcomes teams can measure.
-5. **Example:** a sample campaign for a made-up brand, run through the four steps.
+5. **Example:** a sample campaign for a made-up brand, with a video player and the four steps below it.
 6. **Why now:** market figures from IAB's September 2026 outlook, with a source link.
 7. **Video:** hidden until a video is added (see below).
 8. **Get started:** the demo request.
@@ -22,6 +22,10 @@ The page tells one story, and each section ends with a link to the next:
 ## Before launch: set the contact email
 
 The demo button uses the placeholder address `hello@form.example`. Search `index.html` for `form.example` and replace it with your real address.
+
+## Sample scenario video
+
+The Example section has its own video player. In `index.html`, find `EXAMPLE_VIDEO` and set `src` to a YouTube or Vimeo link, or to an MP4 path such as `videos/sample-scenario.mp4`. Add a `duration` such as `2:30` to show it on the play button. Until `src` is set, the section shows a photo instead.
 
 ## Adding videos
 
