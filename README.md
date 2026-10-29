@@ -37,7 +37,7 @@ Edit the `VIDEOS` list near the end of `index.html`. The Video section and its m
 
 ## Photography
 
-Photos are real stock images from Unsplash, used under the Unsplash License and credited in the footer. Replace them with your own team or customer photos when you have them, with permission.
+Photos are real stock images from Unsplash, used under the Unsplash License, which does not require attribution. Replace them with your own team or customer photos when you have them, with permission.
 
 ## Accessibility
 
