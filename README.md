@@ -1,42 +1,48 @@
 # FORM website
 
-A static website with no build step or dependencies.
+A single-page static site for FORM, campaign planning and measurement software. There is no build step and no dependencies.
 
-## Files
+Live site: https://kayozhang1204-design.github.io/the-creation-machine/
 
-- index.html: complete page, including CSS, JavaScript, inline SVG graphics, and animations.
-- .nojekyll: serves the site as plain static files on GitHub Pages.
+Every push to `main` redeploys the site through GitHub Pages within a minute or two.
+
+## Page structure
+
+The page tells one story, and each section ends with a link to the next:
+
+1. **Hero:** what FORM does, with a "Request a demo" button.
+2. **The problem:** three costs of running campaigns across separate tools.
+3. **How it works:** the four-step workflow (plan, create, launch, measure) and the screens a campaign reaches.
+4. **Results:** the three outcomes teams can measure.
+5. **Example:** a sample campaign for a made-up brand, run through the four steps.
+6. **Why now:** market figures from IAB's September 2026 outlook, with a source link.
+7. **Video:** hidden until a video is added (see below).
+8. **Get started:** the demo request.
+
+## Before launch: set the contact email
+
+The demo button uses the placeholder address `hello@form.example`. Search `index.html` for `form.example` and replace it with your real address.
+
+## Adding videos
+
+Edit the `VIDEOS` list near the end of `index.html`. The Video section and its menu link appear automatically once at least one entry has a `src`.
+
+- **YouTube or Vimeo:** paste the normal share link into `src`. This is the best option for larger files.
+- **Your own MP4:** add it to a `videos/` folder and set `src` to `videos/name.mp4`. GitHub rejects files over 100 MB.
+- **Captions and transcript:** add a `.vtt` file path to `captions`, and `["Speaker", "What they said"]` pairs to `transcript`.
+
+## Photography
+
+Photos are real stock images from Unsplash, used under the Unsplash License and credited in the footer. Replace them with your own team or customer photos when you have them, with permission.
+
+## Accessibility
+
+Text colours meet WCAG AA contrast. The page has a skip link, a keyboard-operable mobile menu, visible focus outlines, alt text on every photo, one h1 with ordered headings, and reduced-motion support.
 
 ## Run locally
-
-Open index.html in your browser, or run:
 
 ```sh
 python3 -m http.server 8000
 ```
 
-Then visit http://localhost:8000.
-
-## Publish on GitHub Pages
-
-The site is published from the root of the main branch at https://kayozhang1204-design.github.io/the-creation-machine/. Every push to main redeploys it automatically within a minute or two. No npm install or build command is needed.
-
-## Adding videos
-
-The Video briefings section is driven by the `VIDEOS` list near the end of the script block in index.html. Each entry has a label, title, speakers, duration, summary, `src`, an optional `poster` image, an optional `captions` file, and an optional `transcript`.
-
-- **YouTube or Vimeo:** paste the normal share link into `src`, for example `https://youtu.be/VIDEO_ID`. This is the best option for long or large videos.
-- **Your own MP4:** add the file to a `videos/` folder and set `src` to `videos/name.mp4`. Keep files well under GitHub's 100 MB per-file limit.
-- **Transcript:** add lines as `['Speaker name', 'What they said']` pairs. A "View transcript" toggle appears automatically.
-
-An entry with an empty `src` shows as "Coming soon". The first entry is the featured video.
-
-## Photography
-
-People photos are loaded from Unsplash under the Unsplash License, and the photographers are credited above the footer. The people shown are models, not customers or staff. Replace them with your own team or customer photos when you have them, with permission.
-
-## Editing
-
-Styles are in the style block and behavior is in the script block in index.html. Graphics are drawn with inline SVG and CSS, so there is no separate images directory.
-
-The Field Notes case study is an illustrative example, not a claim of actual customer results.
+Then open http://localhost:8000.
